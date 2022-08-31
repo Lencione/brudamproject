@@ -94,7 +94,7 @@
                     Swal.fire('Sucesso', response.data.message, 'success');
                     populateTable();
                 }).catch((error) => {
-                    console.log(error.response.data);
+                    Swal.fire('Erro', error.response.data, 'error');
                 });
         });
         populateTable();
